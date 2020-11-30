@@ -27,7 +27,7 @@
     
 }
 #panel{
-    background-color: lightcoral;
+    ;
     width: 100%;
     height: 30%;
     justify-content: space-between;
@@ -36,22 +36,23 @@
 
 }
 
-.img-1{
+.img{
     width: 33%;
     height: 80%;
     border-style: ridge;
 }
-.img-2{
-    width: 33%;
-    height: 80%;
-    border-style: ridge;
+#panel1{
+    width: 100%;
+    height: 100%;
 }
-.img-3{
-    width: 33%;
-    height: 80%;
-    border-style: ridge;
+#panel2{
+    width: 100%;
+    height: 100%;
 }
-
+#panel3{
+    width: 100%;
+    height: 100%;
+}
 .lucky{
     margin-left:23%;
     width: 50%;
