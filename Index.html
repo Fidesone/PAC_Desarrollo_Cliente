@@ -3,31 +3,45 @@
         <meta charset="UTF-8">
         <title>Maquina tragaperras</title>
         <script type="text/javascript" src="js/Script.js"></script>
+        <script type="text/javascript" src="js/faudio.js"></script>
         <link  rel="stylesheet" href="css/Style.css" type="text/css">
     </head>
     <body>
        <div id="container">
 
            <div id="machine">
-               <div id="header">
-                   <button class="insert">Insert Coin</button>
-                   <button class="start">Game Start</button>
-                   <button class="restart">Restart</button>
+               <div class="botones" id="header">
+                   <button  id="insert" onclick="insertMoneda()">Insert Coin</button>
+                   
+                   
 
                </div>
-               <div>Text-1</div>
+               <div id="monedas-disp">Monedas disponibles : </div>
+                <input type="number" id="coins">   
+               
+                   
+               
                <div id="panel">
-                   <div class="img"><img id="panel1" src="/img/cerezas.png" alt=""></div>
-                   <div class="img"><img id="panel2" src="/img/manzana.png" alt=""></div>
-                   <div class="img"><img id="panel3" src="/img/naranja.png" alt=""></div>
+                   <div class="img"><img id="panel1" src="img/cerezas.png" alt=""></div>
+                   <div class="img"><img id="panel2" src="img/naranja.png" alt=""></div>
+                   <div class="img"><img id="panel3" src="img/uvas.png" alt=""></div>
                    
                    
                </div>
                
-              
-                <button class="lucky">¡Try your Lucky!</button>
-                <div> text-3</div>
-               
+              <div class="botones">
+                <button id="lucky" onclick="panel()">¡Try your Lucky!</button>
+                <button id="unlucky" onclick="stop()">Stop</button>
+              </div>
+                <div class="titulo"> 
+                    <h3>Historial de Jugadas</h3>
+                </div>
+                <div>
+                    <textarea readonly name="historial" id="textarea" cols="69" rows="6"></textarea>
+                </div>
+                <div class="botones"> 
+                <button id="restart" onclick="exit(monedas)">Restart</button>
+                </div>
         
            </div>
 
